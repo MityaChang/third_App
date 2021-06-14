@@ -43,5 +43,26 @@ public class Settings extends AppCompatActivity {
 
         switch2 = (Switch) findViewById(R.id.switch2);
 
+        switch1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (switch1.isChecked()) {
+                    switch2.setClickable(false);
+                } else {
+                    switch2.setClickable(true);
+                }
+            }
+        });
+        switch2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (switch2.isChecked()) {
+                    switch1.setClickable(false);
+                } else {
+                    switch1.setClickable(true);
+                }
+            }
+        });
+
     }
 }
