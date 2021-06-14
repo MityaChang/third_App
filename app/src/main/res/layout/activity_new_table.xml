@@ -27,8 +27,8 @@
         android:layout_gravity="center"
         android:ems="10"
         android:hint="Set Date"
-        android:inputType="textPersonName"
-        android:textColor="@color/colorPrimary" />
+        android:inputType="date"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/btContinue"

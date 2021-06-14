@@ -55,14 +55,13 @@ public class DataBase extends SQLiteOpenHelper {
         }
     }
 
-    public boolean updateData(String id, String name) {
+    public boolean updateData(String id, int score) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(COL_2, name);
-
-        db.update(TABLE_NAME, contentValues, "ID=?", new String[]{id});
-
+        contentValues.put(COL_4, score);
+        int finalscores = db.update(TABLE_NAME, contentValues, "ID=?", new String[]{id});
+        db.close();
         return true;
     }
 
