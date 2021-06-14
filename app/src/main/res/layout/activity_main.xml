@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Background"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -19,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/quiz_round_corner"
         android:text="New Table"
         android:textColor="@color/colorPrimary" />
 
@@ -28,8 +29,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/quiz_round_corner"
         android:text="Summarise"
         android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/mainpage1" />
 
 </LinearLayout>
